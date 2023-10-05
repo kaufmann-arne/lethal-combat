@@ -1,0 +1,140 @@
+@font-face{
+	src:  url(assets/MorrisRoman.ttf);
+	font-family: morris;
+}
+
+*{
+	box-sizing: border-box;
+	font-family: morris;
+	
+}
+body{
+	background-color: black;
+	background-image: url(assets/bg1.jpg);
+	background-size: cover;
+}
+h1{
+	font-family: morris;
+	font-size: 5rem;
+	color: #98c7e3;
+	text-align: center;
+	margin-top: 5%;
+}
+h3{
+	font-family: morris;
+	font-size: 2rem;
+	color: #98c7e3;
+	text-align: center;
+	margin-top: 50%;
+	margin-bottom: 5%;
+	padding-top: 5rem;
+}
+
+.game{
+/*	border: 5px solid black*/;
+	position: absolute;
+	margin-top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 100%;
+	max-height: 100%;
+
+}
+
+.stats{
+	position: absolute; 
+	display: flex; 
+	width: 100%; 
+	align-items: center; 
+	padding: 20px;
+}
+
+.healthbar-container1{
+	position: relative; 
+	width: 100%; 
+	display: flex; 
+	justify-content: safe flex-end;
+	border-top: 2px white solid;
+	border-bottom: 2px white solid;
+	border-left: 2px white solid;
+}
+
+.healthbar-container2{
+	position: relative; 
+	width: 100%; 
+	border-top: 2px white solid;
+	border-bottom: 2px white solid;
+	border-right: 2px white solid;
+}
+
+.helper1{
+	background-color: red; 
+	height: 30px; 
+	width: 100%;
+}
+
+.helper2{
+	background-color: red; 
+	height: 30px;
+}
+
+.player-health{
+	position: absolute; 
+	background-color: #818cf8; 
+	bottom: 0; 
+	top: 0; 
+	right: 0; 
+	width: 100%;
+}
+
+.enemy-health{
+	position: absolute; 
+	background-color: #818cf8; 
+	bottom: 0; 
+	top: 0; 
+	right: 0; 
+	left: 0;
+}
+
+.timer{
+	background-color: #333; 
+	width: 100px; 
+	height: 50px; 
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 28px;
+	border: 2px white solid;
+}
+
+.result{
+	position: absolute;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	bottom: 0; 
+	top: 0; 
+	right: 0; 
+	left: 0;
+	font-size: 32px;
+}
+.msg{
+	position: relative;
+	color: #fff;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	bottom: 0; 
+	top: 0; 
+	right: 0; 
+	left: 0;
+	font-size: 32px;
+	z-index: 100;
+}
+
+canvas{
+	border-radius: 10px;
+}

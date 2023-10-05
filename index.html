@@ -1,0 +1,35 @@
+<head>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+	<h1>Lethal Combat</h1>
+
+	<div class="game" >
+		<div class="stats">
+			<div class="healthbar-container1">
+				<div class="helper1"></div>
+				<div id="playerHealth" class="player-health"></div>
+			</div>
+			<div class="timer" id="timer">60</div>
+			<div class="healthbar-container2">
+				<div class="helper2"></div>
+				<div id="enemyHealth" class="enemy-health"></div>
+			</div>
+		</div>
+		<div class="result" id="result">Press Space to Start</div>
+		<div class="msg" id="msg">TIE</div>
+		<canvas></canvas>
+	</div>
+
+	<h3>Use W, A, S, D and Arrrow Keys to fight</br>
+	Use Space to start and pause the fight</h3>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script type="text/javascript" src="utils.js"></script>
+	<script type="text/javascript" src="classes.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</body>
